@@ -1,0 +1,109 @@
+body {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#calculator {
+    width: 320px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px gray;
+}
+#calculator h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+#calculator h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+}
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 18px;
+}
+.scientific-buttons button {
+    font-size: 16px;
+    padding: 10px 6px;
+}
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    caret-color: black;
+    cursor: text;
+    outline: none;
+}
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    background-color: #f2f2f2;
+    color: #222;
+}
+button:active {
+    background-color: lightblue;
+    transform: scale(0.98);
+}
+
+#btnAC,
+#btnDEL,
+#btnAdd,
+#btnSub,
+#btnMul,
+#btnDiv,
+#btnEq{
+    background-color: #ff8c42;
+    color: white;
+    font-weight: bold;
+}
+
+#btnAC,
+#btnDEL {
+    background-color: #e74c3c;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+button:hover {
+    background-color: lightblue;
+    opacity: 0.9;
+}
+button:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.scientific-buttons button {
+    height: 40px;
+    font-size: 12px;
+}
+h2 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
